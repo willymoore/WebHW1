@@ -1,0 +1,38 @@
+<form>
+  <div class="form-group">
+    <label for="originSelect">Origin: </label>
+    <select class="form-select" id="originSelect">
+      <option>O'Hare</option>
+      <option>Midway</option>
+      <option>LaGuardia</option>
+      <option>JFK</option>
+      <option>Fort Worth</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="destinationSelect">Destination: </label>
+    <select class="form-select" id="destinationSelect">
+      <option>O'Hare</option>
+      <option>Midway</option>
+      <option>LaGuardia</option>
+      <option>JFK</option>
+      <option>Fort Worth</option>
+    </select>
+  </div>
+
+  <div class="form-group row">
+    <label for="date-input" class="col-form-label">Date: </label>
+    <input class="form-control" type="date" id="date-input">
+  </div>
+
+  <div class="form-group row">
+    <label for="numTravelers" class="col-form-label">Travelers: </label>
+    <input type="number" [(ngModel)]="numTravelers" class="form-control" [defaultValue]="0" id="numTravelers" name="numTravelers">
+  </div>
+
+  <button type="button" class="btn-primary" (click)="calculateTravelerCost()">Submit!</button>
+
+  <div>Total cost is: {{totalCost}}</div>
+
+</form>
