@@ -1,9 +1,9 @@
-<h2>Welcome {{title}}</h2>
 
-<p>OS: Mac</p>
-<p>IDE: WebStorm</p>
+<header>
+  <ul>
+    <li><a routerLink="/travel-component" routerLinkActive="active">Travel Component</a></li>
+    <li><a routerLink="/about-component" routerLinkActive="active">About Component</a></li>
+  </ul>
+</header>
 
-<app-travel-request>
-
-</app-travel-request>
-
+<router-outlet></router-outlet>
